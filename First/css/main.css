@@ -42,6 +42,11 @@ body{
     margin: 0px;
     padding: 0px;
 }
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
 #banner{
     height: 16px;
     background-color: #c5c5c5
@@ -160,7 +165,7 @@ outline: 0px dotted;
 }
 
 /*Second section*/
-.second-block{
+.second-block,#footer{
     background-color: black;
     height: 60px;
 }
@@ -192,11 +197,15 @@ margin: 14px 0px 14px 0px;
 }
 .block-name__paragraph{
     color: #393939;
-font-family: Rajdhani;
+font-family: "Rajdhani";
 font-size: 24px;
 font-weight: 400;
 text-transform: uppercase;
 letter-spacing: 0.29px;
+margin: 0px 0px 0px 0px;
+}
+.block-name__paragraph_one{
+    margin-bottom: 20px;
 }
 .seta{
     margin-top: 6px;
@@ -275,15 +284,13 @@ letter-spacing: 0.29px;
       height: 100%;
       margin-top: 20px;
   }
-  .block-clothes{
-      margin-top: 20px;
-  }
-  .item-third:hover .item-third__overlay{
+  .item-third:hover .item-third__overlay ,.item-fourth:hover .item-fourth__overlay,.item-fifth:hover .item-fifth__overlay{
     opacity: 1;
   }
-    .item-third{
+    .item-third,.item-fourth,.item-fifth{
     display: block;
     position: relative;
+    margin-top: 40px;
   }
   .item-third__image{
     height: 447px;
@@ -300,7 +307,13 @@ letter-spacing: 0.29px;
   .item-third__image_four{
     background: url(../img/Layer4.jpg)
   }
-  .item-third__overlay {
+  .item-third__image_five{
+      background: url(../img/Layer7.jpg);
+  }
+  .item-third__image_six{
+      background: url(../img/Vector8.jpg);
+  }
+  .item-third__overlay,.item-fourth__overlay,.item-fifth__overlay {
     position: absolute;
     top: 0px;
     left: 0;
@@ -310,7 +323,7 @@ letter-spacing: 0.29px;
     opacity: 0;
     transition: all 0.6s ease;
   }
-  .item-third__paragraph{
+  .item-third__paragraph ,.item-fourth__span{
     text-shadow: 0 3px 0 #141518;
     color: #ffffff;
     font-family: "Rajdhanisemibold";
@@ -320,4 +333,238 @@ letter-spacing: 0.29px;
     padding: 39% 0 0 0;
     text-align: center;
   }
- 
+ .item-third__paragraph_three{
+     padding: 32% 0 0 0;
+ }
+ .item-third__paragraph_four{
+     padding: 46% 0 0 0;
+ }
+ .item-third__paragraph_five{
+     padding: 43% 0 0 0 ;
+ }
+ .item-third__paragraph_six{
+     padding: 30% 0 0 0;
+ }
+
+
+ /*Section four*/
+ .block-name_two,.block-form{
+    margin: 75px 0px 0px 0px;
+ }
+ .item-fourth__image{
+     height: 226px;
+ }
+ .item-fourth__image_one{
+     background: url(../img/Layer\ 2.jpg) no-repeat center top / cover;
+ }
+ .item-fourth__image_two{
+    background: url(../img/Layer\ 17.jpg)no-repeat center top / cover;
+}
+.item-fourth__image_three{
+    background: url(../img/Layer\ 18.jpg)no-repeat center top / cover;
+}
+.item-fourth__image_four{
+    background: url(../img/Layer\ 19.jpg)no-repeat center top / cover;
+}
+ .item-fourth__paragraph,.item-fifth__paragraph,.block-form__paragraph{
+     color: white;
+     text-align: center;
+     font-family: "Rajdhanisemibold";
+     font-size: 24px;
+     font-weight: 400;
+     letter-spacing: 0.29px;
+     text-transform: uppercase;
+ }
+ .item-fourth__span_padding{
+     padding: 26% 0 0 0;
+ }
+
+ /*Section five*/
+ .block-name_three,#footer{
+    margin: 55px 0px 0px 0px;
+ }
+ .item-fifth__image{
+     height: 285px;
+ }
+ .item-fifth__image_one{
+     background: url(../img/Layer\ 22.jpg);
+ }
+ .item-fifth__image_two{
+    background: url(../img/Layer\ 23.jpg);
+}
+.item-fifth__image_three{
+    background: url(../img/Layer\ 24.jpg);
+}
+.item-fifth__image_four{
+    background: url(../img/Layer\ 25.jpg);
+}
+.item-fifth__paragraph_padding{
+    padding: 50% 0 0 0 ;
+}
+.block-form__newsletter{
+    background: url(../img/news.jpg) no-repeat center top / cover;
+    height: 53px;
+}
+.block-form__paragraph_size{
+    font-size: 19px;
+    padding: 14px 0px 0px 0px;
+}
+.form__input{
+    height: 54px;
+    border: 2px solid #d0d0d0;
+    background-color: #999999;
+    width: 100%;
+}
+.form{
+    display: flex;
+}
+.form__button{
+    color: #393939;
+font-family: "Rajdhanisemibold";
+font-size: 19px;
+width: 100%;
+height: 51px;
+box-shadow: 0 4px 0 rgba(20, 21, 24, 0.75);
+background-color: #d0d0d0;
+text-align: center;
+text-transform: uppercase;
+}
+.footer-menu__link{
+    font-family: "Rajdhani";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+    color: white;
+}
+.footer-menu__link:hover{
+    text-decoration: none;
+    color: red;
+}
+.footer-menu{
+    margin-top: 15px;
+}
+.footer-icons{
+    margin-top: 14px;
+}
+.footer-icons__twitter{
+    margin: 0px 5px 0px 5px;
+}
+
+
+
+
+
+/*Hamburger*/
+.menu-block {
+    position: relative;
+    z-index: 2; 
+    position: relative;
+    height: 250px;
+  }
+  .menu-block__wrapper{
+    z-index: 1;
+    position: inherit;
+  }
+  .menu-block__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-block__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+  }
+  .menu-icon {
+    z-index: 19;
+    position: relative;
+    display: none;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+  }
+  @media (min-width: 1200px) {
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        bottom: 22px;
+    }
+  }
+  .menu-icon__line {
+  position: relative;
+  width: 100px;
+  height: 5px;
+  background-color: white;
+  }
+  .menu-icon__line::before {
+  position: absolute;
+  top: -10px;
+  content: '';
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .menu-icon__line::after {
+  position: absolute;
+  top: 10px;
+  content: '';
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .menu-icon.menu-icon-active .menu-icon__line {
+  background-color: transparent;
+  }
+  .menu-icon.menu-icon-active .menu-icon__line::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  .menu-icon.menu-icon-active .menu-icon__line::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  .hamburger {
+    z-index: 9;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    padding: 50px;
+    background-color: black;
+    
+  }
+  @media (min-width: 768px) {
+    .hamburger {
+        width: 334px;
+        left: -22%;
+        display: none;
+    }
+  }
+  .hamburger--active {
+    display: block;
+  }
+  .menu{
+    margin: 15px 0px 0px 0px;
+  }
+  .menu__item{
+      margin-bottom: 20px;
+  }
+  
+  
+  
+  
