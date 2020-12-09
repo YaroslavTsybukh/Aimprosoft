@@ -478,7 +478,7 @@ text-transform: uppercase;
   padding-right: 50px;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 320px) {
     .menu-block__container {
         padding-left: 15px;
         padding-right: 15px;
@@ -492,7 +492,7 @@ text-transform: uppercase;
     height: 30px;
     cursor: pointer;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 320px) {
     .menu-icon {
         display: flex;
         justify-content: center;
@@ -548,13 +548,6 @@ text-transform: uppercase;
     background-color: black;
     
   }
-  @media (min-width: 768px) {
-    .hamburger {
-        width: 334px;
-        left: -22%;
-        display: none;
-    }
-  }
   .hamburger--active {
     display: block;
   }
@@ -565,6 +558,135 @@ text-transform: uppercase;
       margin-bottom: 20px;
   }
   
+  /*Responsive*/
+  @media (max-width: 1200px){
+      .overlay{
+          top:417px
+      }
+      .slick-dots{
+        left: 40%;
+      }
+      .header1__span_second::before {
+        margin: 14px 0px 0px -11px;
+      }
+      .item-fifth__image_one {
+        background: url(../img/Layer\ 22.jpg)no-repeat center top/cover;
+    }
+    .item-fifth__image_two {
+        background: url(../img/Layer\ 23.jpg)no-repeat center top/cover;
+    }
+    .item-fifth__image_three {
+        background: url(../img/Layer\ 24.jpg) no-repeat center top / cover;
+    }
+    .item-fifth__image_four {
+        background: url(../img/Layer\ 25.jpg) no-repeat center top / cover;
+    }
+  }
+  @media (max-width: 992px) {
+    .header-link{
+        margin-top: 30px;
+    }
+    h1{
+        font-size: 23px;
+        text-align:left; 
+        margin-top: 113%;
+    }
+    .header1__span_second{
+        font-size: 15px;
+    }
+    .header1__span_second::before{
+        width: 205px;
+        margin-left: -25px;
+    }
+    .header1__span_first{
+        margin-left: 8px;
+    }
+    .slick-dots{
+        left: 38%;
+      }
+    .notsale{
+        margin-top: 20px;
+    }
+    .sale{
+        height:417px;
+    }
+    .overlay_notsale{
+        top: 369px;
+        left: 2px
+    }
+    .overlay_sale{
+    top: 390px;
+    width: 95%;
+    left: 10px;
+    }
+    .item__paragraph_two{
+        font-family: "Rajdhanisemibold";
+        font-size: 17px;
+        letter-spacing: 0.61px;
+    }
+    .owl-next,.owl-prev{
+        display: none;
+    }
+    .block-form__paragraph_size {
+        font-size: 14px;
+  }
+  .form__button {
+    font-size: 14px;
+  }
+  .block-name__paragraph{
+      font-size: 18px;
+  }
+  .item-third__paragraph{
+      font-size: 20px;
+  }
+  .item-third__image {
+    height: 267px;
+  }
+    .header-link{
+        width: 78px;
+        height: 30px;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        margin: 0 auto;
+    }
+    .header-link__button{
+        font-size: 16px;
+    }
+    .item-fourth__span_padding {
+        padding: 20% 0 0 0;
+    }
+    .item-fourth__image {
+        height: 133px;
+    }
+    .item-fifth__image {
+        height: 169px;
+    }
+    .item-fifth__image_one {
+        background: url(../img/Layer\ 22.jpg)no-repeat center top/cover;
+    }
+    .item-fifth__image_two {
+        background: url(../img/Layer\ 23.jpg)no-repeat center top/cover;
+    }
+    .item-fifth__image_three {
+        background: url(../img/Layer\ 24.jpg) no-repeat center top / cover;
+    }
+    .item-fifth__image_four {
+        background: url(../img/Layer\ 25.jpg) no-repeat center top / cover;
+    }
+}
   
+  
+  
+  @media(min-width: 320px) {
+    .hamburger {
+        width: 334px;
+        left: -22%;
+        display: none;
+    }
+    .hamburger--active {
+        display: block;
+      }
+}
+
   
   
