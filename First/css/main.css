@@ -296,22 +296,22 @@ margin: 0px 0px 0px 0px;
     height: 447px;
   }
   .item-third__image_one{
-    background: url(../img/Vector1_.jpg)
+    background: url(../img/Vector1_.jpg) no-repeat center top / cover;
   }
   .item-third__image_two{
-    background: url(../img/Layer\ 3.jpg)
+    background: url(../img/Layer\ 3.jpg) no-repeat center top / cover;
   }
   .item-third__image_three{
-    background: url(../img/Vector2.jpg)
+    background: url(../img/Vector2.jpg) no-repeat center top / cover;
   }
   .item-third__image_four{
-    background: url(../img/Layer4.jpg)
+    background: url(../img/Layer4.jpg) no-repeat center top / cover;
   }
   .item-third__image_five{
-      background: url(../img/Layer7.jpg);
+      background: url(../img/Layer7.jpg) no-repeat center top / cover;
   }
   .item-third__image_six{
-      background: url(../img/Vector8.jpg);
+      background: url(../img/Vector8.jpg) no-repeat center top / cover;
   }
   .item-third__overlay,.item-fourth__overlay,.item-fifth__overlay {
     position: absolute;
@@ -420,14 +420,14 @@ margin: 0px 0px 0px 0px;
 }
 .form__button{
     color: #393939;
-font-family: "Rajdhanisemibold";
-font-size: 19px;
-width: 100%;
-height: 51px;
-box-shadow: 0 4px 0 rgba(20, 21, 24, 0.75);
-background-color: #d0d0d0;
-text-align: center;
-text-transform: uppercase;
+    font-family: "Rajdhanisemibold";
+    font-size: 19px;
+    width: 100%;
+    height: 51px;
+    box-shadow: 2px 4px 0 rgba(20, 21, 24, 0.75);
+    background-color: #d0d0d0;
+    text-align: center;
+    text-transform: uppercase;
 }
 .footer-menu__link{
     font-family: "Rajdhani";
@@ -581,6 +581,9 @@ text-transform: uppercase;
     .item-fifth__image_four {
         background: url(../img/Layer\ 25.jpg) no-repeat center top / cover;
     }
+    .block-form__newsletter {
+        width: 219px;
+    }
   }
   @media (max-width: 992px) {
     .header-link{
@@ -607,6 +610,9 @@ text-transform: uppercase;
     .notsale{
         margin-top: 20px;
     }
+    .block-form__newsletter {
+        width: 100%;
+    }
     .sale{
         height:417px;
     }
@@ -624,14 +630,13 @@ text-transform: uppercase;
         font-size: 17px;
         letter-spacing: 0.61px;
     }
-    .owl-next,.owl-prev{
-        display: none;
-    }
     .block-form__paragraph_size {
         font-size: 14px;
+        padding: 7px 0px 0px 0px;
   }
   .form__button {
     font-size: 14px;
+    height: 30px;
   }
   .block-name__paragraph{
       font-size: 18px;
@@ -673,8 +678,115 @@ text-transform: uppercase;
     .item-fifth__image_four {
         background: url(../img/Layer\ 25.jpg) no-repeat center top / cover;
     }
+    .block-form__newsletter {
+        height: 32px;
+    }
+    .form__input {
+        height: 32px;
+    }
 }
-  
+  @media (max-width:768px){
+    .owl-next,.owl-prev{
+        display: none;
+    }
+    .banner__paragraph{
+        font-size: 13px;
+    }
+    .slider__block {
+    height: 313px;
+    }
+    h1 {
+        margin-top: 99px;
+        font-size: 14px;
+        font-family: "Rajdhanimedium";
+    }
+    .header1__span_first{
+        font-family: "Rajdhanibold";
+        margin-left: 15px;
+    }
+    .header1__span_second {
+        font-size: 11px
+    }
+    .header1__span_second::before {
+        width: 143px;
+        margin-left: -13px;
+    }
+    .slick-dots {
+        left: 36%;
+    }
+    .notsale {
+        margin-top: 20px;
+        height: 277px;
+    }
+    .sale {
+        margin-top: 6px;
+        height: 291px;
+    }
+    .item-third__image_one,.item-third__image_two{
+        height: 216px;
+    }
+    .item-third__paragraph{
+        padding: 20% 0 0 0;
+  }
+  .item-third__image_three{
+    height: 166px;
+  }
+  .item-third__paragraph_three{
+      padding: 15% 0 0 0;
+  }
+  .item-third__image_four{
+      height: 313px;
+  }
+  .item-third__paragraph_four{
+      padding: 30% 0 0 0;
+  }
+  .item-third__image_five{
+    height: 293px;
+  }
+  .item-third__paragraph_five{
+    padding: 27% 0 0 0;
+  }
+  .item-third__image_six{
+    height: 176px;
+  }
+  .item-third__paragraph_six{
+    padding: 16% 0 0 0;
+  }
+  .item-fourth__image_five{
+    background: url(../img/Layer_22_copy.jpg) no-repeat center top / cover;
+  }
+  .block-name_three{
+    margin: 0px 0px 0px 0px;
+  }
+  .block-name_two, .block-form {
+    margin: 30px 0px 0px 0px;
+}
+.form {
+    display: block;
+    margin-top: 10px;
+}
+.form__input{
+    margin-bottom: 10px;
+    height: 41px;
+}
+.block-form__newsletter{
+    background: url(../img/Tablet/Shape_4_copy_5.jpg) no-repeat center top / cover;
+    height: 41px;
+}
+.block-form__paragraph_size {
+    font-size: 19px;
+    padding: 7px 0px 0px 0px;
+    font-family: "Rajdhani";
+}
+.form__button{
+    font-size: 19px;
+    font-family: "Rajdhani";
+    height: 41px;
+}
+#footer {
+    background-color: #f1f1f1;
+}
+}
   
   
   @media(min-width: 320px) {
