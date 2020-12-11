@@ -154,8 +154,7 @@ line-height: 29.56px;
     height: 20px;
     border-radius: 50%;
     border: 1px solid white;
-    background: none;
-   
+    background: white;
 }
 .slick-active button{
     background-color: black;   
@@ -206,9 +205,6 @@ margin: 0px 0px 0px 0px;
 }
 .block-name__paragraph_one{
     margin-bottom: 20px;
-}
-.seta{
-    margin-top: 6px;
 }
 .block-name{
     margin-top: 40px;
@@ -559,6 +555,19 @@ margin: 0px 0px 0px 0px;
   }
   
   /*Responsive*/
+  @media (min-width:1200px){
+    .hamburger {
+        width: 334px;
+        left: -22%;
+        display: none;
+    }
+    .hamburger--active {
+        display: block;
+      }
+    .seta {
+        margin-top: 6px;
+    }
+  }
   @media (max-width: 1200px){
       .overlay{
           top:417px
@@ -584,8 +593,22 @@ margin: 0px 0px 0px 0px;
     .block-form__newsletter {
         width: 219px;
     }
+    .hamburger {
+        width: 334px;
+        left: -22%;
+        display: none;
+    }
+    .hamburger--active {
+        display: block;
+      }
+      .seta {
+        margin-top: 6px;
+    }
   }
   @media (max-width: 992px) {
+    .seta {
+        margin-bottom: 4px;
+    }
     .header-link{
         margin-top: 30px;
     }
@@ -625,10 +648,16 @@ margin: 0px 0px 0px 0px;
     width: 95%;
     left: 10px;
     }
-    .item__paragraph_two{
+    .item__sale{
         font-family: "Rajdhanisemibold";
         font-size: 17px;
         letter-spacing: 0.61px;
+        text-decoration: none;
+        margin: 0px;
+        text-align: center;
+    }
+    .item__paragraph {
+        text-decoration: line-through;
     }
     .block-form__paragraph_size {
         font-size: 14px;
@@ -684,8 +713,36 @@ margin: 0px 0px 0px 0px;
     .form__input {
         height: 32px;
     }
+    .hamburger {
+        width: 334px;
+        left: -22%;
+        display: none;
+    }
+    .hamburger--active {
+        display: block;
+      }
 }
   @media (max-width:768px){
+    .overlay_sale {
+        top: 261px;
+        width: 95%;
+        left: 8px;
+    }
+    .overlay_notsale {
+        top: 250px;
+        left: 1px;
+    }
+    .seta {
+        margin-bottom: 10px;
+    }
+    .hamburger {
+        width: 334px;
+        left: -22%;
+        display: none;
+    }
+    .hamburger--active {
+        display: block;
+      }
     .owl-next,.owl-prev{
         display: none;
     }
@@ -786,19 +843,96 @@ margin: 0px 0px 0px 0px;
 #footer {
     background-color: #f1f1f1;
 }
+.mobileImage{
+    margin-top: 20px;
 }
-  
-  
-  @media(min-width: 320px) {
+.slick-dots button {
+    border: 1px solid #929292;
+}
+}
+@media (max-width: 576px){
+    .item-fifth__paragraph_padding {
+        padding: 14% 0 0 0;
+    }
+    .item-fourth__span_padding {
+        padding: 6% 0 0 0;
+    }
+    .overlay_notsale {
+        left: 3px;
+    }
+    .overlay_sale {
+        left: 25px;
+    }
+    .hamburger {
+    left: -56%;
+    }
     .hamburger {
         width: 334px;
-        left: -22%;
         display: none;
     }
     .hamburger--active {
         display: block;
       }
+      h1{
+          text-align: center;
+      }
+      .header1__span_second::before {
+        margin-left: 23%;
+      }
+      .slick-dots {
+        left: 30%;
+    }
+    .second-block__header {
+        text-align: center;
+    }
 }
+@media (max-width: 476px){
+    .header1__span_second::before {
+        margin-left: 15%;
+      }
+      .slick-dots {
+        left: 26%;
+    }
+    .block-name__paragraph {
+        font-size: 15px;
+    }
+    .seta {
+        margin-bottom: 9px;
+    }
+    .overlay_sale {
+        left: 19px;
+    }
+    .second-block__header {
+        font-size: 20px;
+    }
+}
+@media (max-width: 386px){
+    .header1__span_second::before {
+        margin-left: -7%;
+      }
+      .slick-dots {
+        left: 23%;
+    }
+    .block-name__paragraph {
+        font-size: 12px;
+        margin-top: 9px;
+    }
+    .seta {
+        margin-bottom: 2px;
+    }
+    .overlay_sale {
+        left: 13px;
+    }
+    .overlay_notsale {
+        left: 2px;
+    }
+    .header1__span_first {
+        margin-left: -1px;
+    }
+}
+
+  
+  
 
   
   
