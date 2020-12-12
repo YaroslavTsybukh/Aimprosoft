@@ -2,6 +2,8 @@ import React from "react"
 import './App.css';
 import { faUser } from "../node_modules/@fortawesome/free-solid-svg-icons";
 import { faLock } from "../node_modules/@fortawesome/free-solid-svg-icons";
+import {faCheck } from "../node_modules/@fortawesome/free-solid-svg-icons";
+import {faTimes } from "../node_modules/@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "../node_modules/@fortawesome/react-fontawesome";
 import { Formik, Field, Form} from "formik";
 import * as Yup from "yup";
@@ -9,7 +11,7 @@ import * as Yup from "yup";
 const SignupSchema = Yup.object().shape({
   email: Yup.string()
     .email("Invalid e-mail")
-    .required("Поле обязательно к заполнению!"),
+    .required("This field is required!"),
   password: Yup.string()
     .min(6, "Invalid password (min 6 - max 24)")
     .max(24, "Invalid password (min 6 - max 24)")
@@ -17,7 +19,6 @@ const SignupSchema = Yup.object().shape({
 });
 
 const App = () => {
-
   return (
     <div className="App">
       <h1>Bank <span className="header-span">Support Portal</span></h1>
@@ -40,13 +41,13 @@ const App = () => {
                     <FontAwesomeIcon icon={faUser}/>
                     <Field className={touched.email && (touched.email && errors.email ? "error" : "success") } name="email" type="email" placeholder="E-mail"></Field>
                     {touched.email && errors.email && (
-                      <div className="error">{errors.email}</div>
+                      <span className="error-Text"><div className="error">{errors.email}</div></span>
                     )}
                     {touched.email && errors.email && (
-                      <div className="cross">Krestik</div>
+                      <FontAwesomeIcon icon={faTimes}/>
                     )}
                     {touched.email && !errors.email && (
-                      <div className="Succesed">galochka</div>
+                      <FontAwesomeIcon icon={faCheck}/>
                     )}
                   </div>
               </div>
@@ -55,16 +56,16 @@ const App = () => {
                         <FontAwesomeIcon icon ={faLock}/>
                         <Field className={touched.password && (touched.password && errors.password ? "error" : "success") } name="password" type="password" placeholder="Password"></Field>
                         {touched.password && errors.password && (
-                          <div className="error">{errors.password}</div>
+                          <span className="error-Text"><div className="error">{errors.password}</div></span>
                         )}
                         {touched.password && errors.password && (
-                          <div className="cross">Krestik</div>
+                          <FontAwesomeIcon icon={faTimes}/>
                         )}
                         {touched.password && !errors.password && (
                           <div className="success">{!errors.password}</div>
                         )}
                         {touched.password && !errors.password && (
-                          <div className="Succesed">galochka</div>
+                          <FontAwesomeIcon icon={faCheck}/>
                         )}
                   </div>
               </div>

@@ -76,12 +76,21 @@ input.success{
   bottom: 29px;
   right: 0px;
 }
-.Succesed{
-  display: inline-block;
-  bottom: 13px;
-  right: 0;
-  position: absolute;
-}
 .field-block{
  position: relative
+}
+.fa-check,.fa-times{
+  display: inline-block;
+  position: absolute;
+  top: 46px;
+  right: 35px;
+  color: green;
+}
+.fa-times{
+  color: red;
+}
+.error-Text{
+  display: block;
+  margin-right: 43%;
+  margin-top: 5px;
 }
