@@ -69,7 +69,7 @@ const App = () => {
                 </div>
             </div>
             <button type="submit" >Login</button>
-          </Form>
+            </Form>
           )}
         </Formik>
             <p className="form-wrapper__paragraph">Forgot your password? <a href="#." className="form-wrapper__link">Reset it here.</a></p>
