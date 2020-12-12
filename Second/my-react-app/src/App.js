@@ -23,7 +23,6 @@ const App = () => {
     <div className="App">
       <h1>Bank <span className="header-span">Support Portal</span></h1>
         <div className="form-wrapper">
-          <faCoffee icon="fas fa-ad"/>
           <Formik
           initialValues={{
             email: "",
@@ -36,41 +35,41 @@ const App = () => {
         >
           {({ touched, errors }) => (
             <Form className="form">
-              <div>
-                  <div className="field-block">
-                    <FontAwesomeIcon icon={faUser}/>
-                    <Field className={touched.email && (touched.email && errors.email ? "error" : "success") } name="email" type="email" placeholder="E-mail"></Field>
-                    {touched.email && errors.email && (
-                      <span className="error-Text"><div className="error">{errors.email}</div></span>
-                    )}
-                    {touched.email && errors.email && (
-                      <FontAwesomeIcon icon={faTimes}/>
-                    )}
-                    {touched.email && !errors.email && (
-                      <FontAwesomeIcon icon={faCheck}/>
-                    )}
-                  </div>
-              </div>
-              <div>
-                  <div className="field-block">
-                        <FontAwesomeIcon icon ={faLock}/>
-                        <Field className={touched.password && (touched.password && errors.password ? "error" : "success") } name="password" type="password" placeholder="Password"></Field>
-                        {touched.password && errors.password && (
-                          <span className="error-Text"><div className="error">{errors.password}</div></span>
-                        )}
-                        {touched.password && errors.password && (
-                          <FontAwesomeIcon icon={faTimes}/>
-                        )}
-                        {touched.password && !errors.password && (
-                          <div className="success">{!errors.password}</div>
-                        )}
-                        {touched.password && !errors.password && (
-                          <FontAwesomeIcon icon={faCheck}/>
-                        )}
-                  </div>
-              </div>
-              <button type="submit" >Login</button>
-            </Form>
+            <div>
+                <div className="field-block">
+                  <FontAwesomeIcon icon={faUser}/>
+                  <Field className={touched.email && (touched.email && errors.email ? "error" : "success") } name="email" type="email" placeholder="E-mail"></Field>
+                  {touched.email && errors.email && (
+                    <span className="error-Text"><div className="error">{errors.email}</div></span>
+                  )}
+                  {touched.email && errors.email && (
+                    <FontAwesomeIcon icon={faTimes}/>
+                  )}
+                  {touched.email && !errors.email && (
+                    <FontAwesomeIcon icon={faCheck}/>
+                  )}
+                </div>
+            </div>
+            <div>
+                <div className="field-block">
+                      <FontAwesomeIcon icon ={faLock}/>
+                      <Field className={touched.password && (touched.password && errors.password ? "error" : "success") } name="password" type="password" placeholder="Password"></Field>
+                      {touched.password && errors.password && (
+                        <span className="error-Text"><div className="error">{errors.password}</div></span>
+                      )}
+                      {touched.password && errors.password && (
+                        <FontAwesomeIcon icon={faTimes}/>
+                      )}
+                      {touched.password && !errors.password && (
+                        <div className="success">{!errors.password}</div>
+                      )}
+                      {touched.password && !errors.password && (
+                        <FontAwesomeIcon icon={faCheck}/>
+                      )}
+                </div>
+            </div>
+            <button type="submit" >Login</button>
+          </Form>
           )}
         </Formik>
             <p className="form-wrapper__paragraph">Forgot your password? <a href="#." className="form-wrapper__link">Reset it here.</a></p>
