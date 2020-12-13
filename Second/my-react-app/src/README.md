@@ -23,10 +23,11 @@
 Пример кода 
 
 //code
-<FontAwesomeIcon icon={faTimes}/>
-<FontAwesomeIcon icon={faCheck}/>
-<FontAwesomeIcon icon={faUser}/>
-<FontAwesomeIcon icon ={faLock}/>
+
+    <FontAwesomeIcon icon={faTimes}/>
+    <FontAwesomeIcon icon={faCheck}/>
+    <FontAwesomeIcon icon={faUser}/>
+    <FontAwesomeIcon icon ={faLock}/>
 
 и также сама форма с помощью 
 - yup (Yup — библиотека, которая является валидатором для модели, которую мы сами и создаем с помощью Yup.)
