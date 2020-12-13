@@ -656,7 +656,7 @@ margin: 0px 0px 0px 0px;
         margin: 0px;
         text-align: center;
     }
-    .item__paragraph {
+    .item__paragraph_line {
         text-decoration: line-through;
     }
     .block-form__paragraph_size {
@@ -906,6 +906,7 @@ margin: 0px 0px 0px 0px;
         font-size: 20px;
     }
 }
+
 @media (max-width: 386px){
     .header1__span_second::before {
         margin-left: -7%;
