@@ -36,15 +36,15 @@
 Пример кода 
 //code
 
-const SignupSchema = Yup.object().shape({
-email: Yup.string()
+    const SignupSchema = Yup.object().shape({
+    email: Yup.string()
     .email("Invalid e-mail")
     .required("Invalid e-mail"),
-password: Yup.string()
+    password: Yup.string()
     .min(6, "Invalid password")
     .max(24, "Invalid password")
     .required("Invalid password"),
-});
+    });
 
     <Formik
         initialValues={{
