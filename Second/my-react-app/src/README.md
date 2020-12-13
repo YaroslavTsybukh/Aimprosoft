@@ -1,6 +1,9 @@
 # Create Reat App
 
-Была создана страница с помощью React.js. Страница включает в себя Login form. В этом проекте были использованы такие пакеты , как
+Была создана страница с помощью React.js. 
+- import React from "react" . Мы этой строкой импортируем React из библиотеки "react" , которая находится в папке node_modules.
+
+Страница включает в себя Login form. В этом проекте были использованы такие пакеты , как
 </br>
 
 - @fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -101,6 +104,7 @@
 
 ## Installation
 - import React from "react"
+- import './App.css';
 - import { faUser } from "../node_modules/@fortawesome/free-solid-svg-icons";
 - import { faLock } from "../node_modules/@fortawesome/free-solid-svg-icons";
 - import {faCheck } from "../node_modules/@fortawesome/free-solid-svg-icons";
