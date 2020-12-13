@@ -43,6 +43,8 @@ button{
   font-size: 18px;
   font-family: "Helvetica Neue";
   margin: 40px 0px 0px 70px;
+  letter-spacing: -0.18px;
+  border-color: #36a2c1;
 }
 .form-wrapper__paragraph{
   color: #666666;
@@ -50,6 +52,7 @@ button{
   font-size: 12px;
   font-weight: 300;
   margin: 20px 125px 0px 0px;
+  letter-spacing: -0.12px;
 }
 .form-wrapper__link{
   color: #36a2c1;
@@ -89,8 +92,13 @@ input.success{
 .fa-times{
   color: red;
 }
-.error-Text{
+.errorEmail-Text{
   display: block;
-  margin-right: 43%;
+  margin-right: 52%;
+  margin-top: 5px;
+}
+.errorPassword-Text{
+  display: block;
+  margin-right: 49%;
   margin-top: 5px;
 }

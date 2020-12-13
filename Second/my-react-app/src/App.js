@@ -11,11 +11,11 @@ import * as Yup from "yup";
 const SignupSchema = Yup.object().shape({
   email: Yup.string()
     .email("Invalid e-mail")
-    .required("This field is required!"),
+    .required("Invalid e-mail"),
   password: Yup.string()
-    .min(6, "Invalid password (min 6 - max 24)")
-    .max(24, "Invalid password (min 6 - max 24)")
-    .required("This field is required!"),
+    .min(6, "Invalid password")
+    .max(24, "Invalid password")
+    .required("Invalid password"),
 });
 
 const App = () => {
@@ -40,7 +40,7 @@ const App = () => {
                   <FontAwesomeIcon icon={faUser}/>
                   <Field className={touched.email && (touched.email && errors.email ? "error" : "success") } name="email" type="email" placeholder="E-mail"></Field>
                   {touched.email && errors.email && (
-                    <span className="error-Text"><div className="error">{errors.email}</div></span>
+                    <span className="errorEmail-Text"><div className="error">{errors.email}</div></span>
                   )}
                   {touched.email && errors.email && (
                     <FontAwesomeIcon icon={faTimes}/>
@@ -55,7 +55,7 @@ const App = () => {
                       <FontAwesomeIcon icon ={faLock}/>
                       <Field className={touched.password && (touched.password && errors.password ? "error" : "success") } name="password" type="password" placeholder="Password"></Field>
                       {touched.password && errors.password && (
-                        <span className="error-Text"><div className="error">{errors.password}</div></span>
+                        <span className="errorPassword-Text"><div className="error">{errors.password}</div></span>
                       )}
                       {touched.password && errors.password && (
                         <FontAwesomeIcon icon={faTimes}/>
