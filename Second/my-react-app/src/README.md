@@ -1,4 +1,4 @@
-#Create Reat App
+# Create Reat App
 
 Была создана страница с помощью React.js. Страница включает в себя Login form. В этом проекте были использованы такие пакеты , как
 </br>
@@ -88,10 +88,10 @@ password: Yup.string()
     )}
 </Formik>
 
-##Prerequisites
+## Prerequisites
 Для установки пакетов мы используем npm . Это менеджер пакетов, входящий в состав Node.js. Установка пакета производится при помощи команды: npm install <packagename> .Все доступные для установки пакеты и их краткое описание: npm search.
 
-##Installation
+## Installation
 -import React from "react"
 -import { faUser } from "../node_modules/@fortawesome/free-solid-svg-icons";
 -import { faLock } from "../node_modules/@fortawesome/free-solid-svg-icons";
@@ -102,5 +102,3 @@ password: Yup.string()
 -import * as Yup from "yup";
 
 Для того чтобы импортировать пакеты , мы должны их установить с помощью npm . К примеру: npm install --save @fortawesome/free-solid-svg-icons. Где с помощью --save создается зависимость в package.json. Когда мы установили эти пакеты , мы их импортируем и чтобы запустить проект в терминале вводим npm start.
-
-![alt text](screenshots/./img/1.JPG "Описание будет тут")​
