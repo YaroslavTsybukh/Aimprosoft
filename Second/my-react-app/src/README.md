@@ -7,7 +7,7 @@
 
 - "@fortawesome/free-solid-svg-icons": "^5.15.1",
 
--"@fortawesome/react-fontawesome": "^0.1.13",
+- "@fortawesome/react-fontawesome": "^0.1.13",
 
 - yup,
 
@@ -108,4 +108,22 @@ password: Yup.string()
 - import { Formik, Field, Form} from "formik";
 - import * as Yup from "yup";
 
-Для того чтобы импортировать пакеты , мы должны их установить с помощью npm . К примеру: npm install --save @fortawesome/free-solid-svg-icons. Где с помощью --save создается зависимость в package.json. Когда мы установили эти пакеты , мы их импортируем и чтобы запустить проект в терминале вводим npm start.
+Для того чтобы импортировать пакеты , мы должны их установить с помощью npm . К примеру: npm install --save @fortawesome/free-solid-svg-icons. Где с помощью --save создается зависимость в package.json. Когда мы установили эти пакеты , мы их импортируем и чтобы запустить проект в терминале вводим npm start(Запускает приложение в режиме разработки.)Если вы внесете правки, страница перезагрузится.
+Вы также увидите любые ошибки ворса в консоли.</br>
+Для просмотра результата формы откройте [http://localhost:3000](http://localhost:3000) в браузере.
+
+## Tests
+- npm test
+Запускает тестовый раннер в интерактивном режиме часов
+
+## Built With
+- React — JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов. 
+
+## Versioning
+- React следует семантическому управлению версиями (semver).
+
+## Author
+- Ярослав Цыбух (проект my-react-app)
+
+## License
+Этот проект находится под лицензией MIT License.
